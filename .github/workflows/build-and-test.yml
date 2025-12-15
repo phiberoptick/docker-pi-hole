@@ -2,6 +2,9 @@ name: Build Image and Test
 on:
   pull_request:
 
+permissions:
+  contents: read
+
 jobs:
   build-and-test:
     runs-on: ${{ matrix.runner }}

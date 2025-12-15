@@ -8,6 +8,9 @@ on:
   release:
     types: [published]
 
+permissions:
+  contents: read
+  packages: write
 
 env:
   dockerhub: ${{ secrets.DOCKERHUB_NAMESPACE }}/pihole
